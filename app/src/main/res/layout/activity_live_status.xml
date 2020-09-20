@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    tools:context=".LiveStatus">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/txtStn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:text="FROM:"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/stn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="118dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/white"
+        android:layout_toRightOf="@+id/txtStn"
+        android:gravity="start"
+        android:text="Station"
+        android:textSize="15sp" />
+
+
+
+    <TextView
+        android:id="@+id/txtPos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtStn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:text="STATUS :"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pos"
+        android:layout_width="168dp"
+        android:layout_height="87dp"
+        android:layout_below="@+id/stn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/txtPos"
+        android:gravity="start"
+        android:text="Position"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pos"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+        android:textColor="@android:color/white"
+        android:text="TRAIN NAME :"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="165dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/pos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="101dp"
+        android:layout_marginTop="37dp"
+        android:layout_toRightOf="@+id/txtPos"
+        android:textColor="@android:color/white"
+        android:gravity="start"
+        android:text="Name"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtDep"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="35dp"
+        android:text="SCHEDULED DEPARTURE :"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dep"
+        android:layout_width="165dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="34dp"
+        android:textColor="@android:color/white"
+        android:layout_toRightOf="@+id/txtDep"
+        android:gravity="start"
+        android:text="Name"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtActDep"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDep"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+        android:textColor="@android:color/white"
+        android:text="ACTUAL DEPARTURE:"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/actDep"
+        android:layout_width="165dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/dep"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="54dp"
+        android:layout_toRightOf="@+id/txtDep"
+        android:gravity="start"
+        android:text="Actual Departure"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtActArrival"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtActDep"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+        android:text="REACHED THE DESTINATION:"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/actArrival"
+        android:layout_width="165dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/actDep"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="51dp"
+        android:layout_toRightOf="@+id/txtDep"
+        android:gravity="start"
+        android:textColor="@android:color/white"
+        android:text="Actual Departure"
+        android:textSize="15sp" />
+
+    <ProgressBar
+        android:id="@+id/pBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+
+
+
+</RelativeLayout>

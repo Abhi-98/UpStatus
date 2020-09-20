@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHECK LIVE TRAIN STATUS"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:id="@+id/txt_header"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Train No."
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/txt_header"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/txt_pnr"
+        />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:hint="  eg. 12371"
+        android:textSize="25sp"
+        android:textColorHint="@android:color/white"
+        android:layout_below="@+id/txt_pnr"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="15dp"
+        android:id="@+id/et_pnr"
+        android:background="@drawable/back"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Station Code."
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/et_pnr"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/txt_stn_code"
+        />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:hint="  eg. CDG"
+        android:textSize="25sp"
+        android:layout_below="@+id/txt_stn_code"
+        android:layout_marginTop="15dp"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:inputType="textCapCharacters"
+        android:background="@drawable/back"
+        android:id="@+id/et_stn_code"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Date"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_below="@+id/et_stn_code"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/txt_date"
+        />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:hint="  eg. 26-10-2019"
+        android:textSize="25sp"
+        android:layout_below="@+id/txt_date"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:id="@+id/et_date"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/back"
+        android:clickable="true"
+        android:editable="false"
+        />
+
+    <ImageView
+        android:id="@+id/bt_checkPnr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_date"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/checkstatus" />
+
+
+</RelativeLayout>

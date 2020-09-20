@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/logoOut"
+            android:icon="@drawable/ic_person_outline_black_24dp"
+            android:title="Sign Out" />
+        <item
+            android:id="@+id/nav_live"
+            android:icon="@drawable/ic_directions_transit_black_24dp"
+            android:title="Live Status" />
+        <item
+            android:id="@+id/nav_route"
+            android:icon="@drawable/ic_location_searching_black_24dp"
+            android:title="Check Route" />
+        <item
+            android:id="@+id/nav_fare"
+            android:icon="@drawable/ic_airline_seat_recline_normal_black_24dp"
+            android:title="Check Seat Availability" />
+    </group>
+
+
+</menu>

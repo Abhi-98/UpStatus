@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Info">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STARTING STATION :"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/txtStn"
+        android:layout_marginTop="100dp"
+        />
+
+    <TextView
+        android:id="@+id/stn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="100dp"
+        android:layout_toRightOf="@+id/txtStn"
+        android:text="Station"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtPos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/txtStn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:text="STATUS :"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pos"
+        android:layout_width="165dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/stn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="111dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/txtPos"
+        android:text="Position"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/pos"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:text="NAME :"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/pos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="113dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/txtPos"
+        android:text="Name"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtDep"
+        android:layout_width="127dp"
+        android:layout_height="54dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:text="SCHEDULED DEPARTURE :"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dep"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/txtDep"
+        android:text="Name"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+
+
+</RelativeLayout>
